@@ -2,7 +2,8 @@ class CreateTemplates < ActiveRecord::Migration
   def change
     create_table :templates do |t|
       t.string :name
-      t.text :description
+      t.string :description
+      t.text :body
 
       t.timestamps null: false
     end
